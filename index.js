@@ -37,9 +37,7 @@ const formRoute = require('./routes/formContact')
 
 // routes
 
-app.use('/', (req,res)=>{
-    res.send('working...')
-})
+
 app.use('/contact', formRoute )
 // route middlewares
 
