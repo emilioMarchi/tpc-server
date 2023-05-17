@@ -1,5 +1,5 @@
 const express = require('express') 
-
+const connectDb = require('./mongoConnection')
 const bodyparser = require('body-parser');
 const path = require('path')
 require('dotenv').config()
@@ -26,7 +26,7 @@ app.use(cors(corsOptions));
 
 
 // Conexión a Base de datos
-
+connectDb()
 
     
 //import routes

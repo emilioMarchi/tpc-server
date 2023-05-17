@@ -1,9 +1,7 @@
 const router = require('express').Router()
-const connectDb = require('../mongoConnection')
+
 const UserQuery = require('../mongoModels/queryModel')
 
-
-connectDb()
 
 router.post('/new-query', async (req,res) => {
     try{
