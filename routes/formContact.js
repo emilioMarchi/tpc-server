@@ -5,7 +5,7 @@ const UserQuery = require('../mongoModels/queryModel')
 
 connectDb()
 
-router.post('/contact', async (req,res) => {
+router.post('/new-query', async (req,res) => {
     try{
         console.log(req.body)
         const {userName, userEmail, userQuery,} = req.body

@@ -40,7 +40,7 @@ const formRoute = require('./routes/formContact')
 app.use('/', (req,res)=>{
     res.send('working...')
 })
-app.use('/', formRoute )
+app.use('/contact', formRoute )
 // route middlewares
 
 app.listen(port, () => console.log(`App is live on port ${port}!`))
