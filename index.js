@@ -32,6 +32,7 @@ connectDb()
 //import routes
 
 const formRoute = require('./routes/formContact')
+const emailRoute = require('./routes/emailRoute')
     
  
 
@@ -39,6 +40,7 @@ const formRoute = require('./routes/formContact')
 
 
 app.use('/contact', formRoute )
+app.use('/message', emailRoute )
 // route middlewares
 
 app.listen(port, () => console.log(`App is live on port ${port}!`))
